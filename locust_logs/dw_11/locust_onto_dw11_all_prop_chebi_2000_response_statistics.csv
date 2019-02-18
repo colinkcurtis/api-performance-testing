@@ -1,0 +1,3 @@
+Method,Name,# requests,# failures,Median response time,Average response time,Min response time,Max response time,Average Content Size,Requests/s
+GET,/all_properties/CHEBI:89671,550024,6,110,913,6,490800,1196,386.35
+None,Total,550024,6,110,913,6,490800,1196,386.35
