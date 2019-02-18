@@ -2,7 +2,7 @@ from locust import HttpLocust, TaskSet, task
 
 class UserBehavior(TaskSet):
 
-    @task(0)
+    @task(1)
     def get_ancestors(self):
         self.client.get("/ancestors/MONDO%3A0004634")
 
