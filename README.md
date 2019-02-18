@@ -1,9 +1,7 @@
 # api-performance-testing
-##A set of scripts for testing APIs and other requestable services
-
 
 ## To use this repo:
-###$brew install libev ###necessary for the locustio dependency, gevent
+### $brew install libev ###necessary for the locustio dependency, gevent
 
 ### $python3 -m venv YOUR_NEW_ENV
 ### $pip install --upgrade pip ###recommended
