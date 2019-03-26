@@ -9,5 +9,5 @@
 ### $git clone git@github.com:colinkcurtis/api-performance-testing
 ### $cd api-performance-testing
 ### A sample command to run:
-### $locust -f onto_api_locust.py --host=http://localhost:5000 ###relevant if you are running an Onto API host locally
+### $locust -f <INSERT TEXT HERE>_api_locust.py --host=http://localhost:port ###relevant if you are running an API host locally
 ### Navigate in the browser to 0.0.0.0:8089 to run the locust utility and observe and gather outputs...
