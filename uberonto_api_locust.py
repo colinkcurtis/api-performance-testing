@@ -4,7 +4,8 @@ class UserBehavior(TaskSet):
     
     @task(1)
     def get_descendants(self):
-        self.client.get("/descendants/CHEBI:23367")
+        self.client.get("/descendants/GO:0005576")
+        # TIME TO EXECUTE: GO:0005576 < GO:0005575 < CHEBI:23367
 
     @task(1)
     def get_children(self):
@@ -12,7 +13,8 @@ class UserBehavior(TaskSet):
 
     @task(1)
     def get_id_list(self):
-        self.client.get("/id_list/MONDO")
+        self.client.get("/id_list/CL")
+        # TIME TO EXECUTE: CL < HP < MONDO < CHEBI
 
     @task(1)
     def get_label(self):
@@ -21,5 +23,5 @@ class UserBehavior(TaskSet):
 
 class WebsiteUser(HttpLocust):
     task_set = UserBehavior
-    min_wait = 100
+    min_wait = 0
     max_wait = 1000
